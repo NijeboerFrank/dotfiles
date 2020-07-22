@@ -33,3 +33,5 @@ endif
 
 "{{ Autocompletion related plugins
 call plug#begin(g:PLUGIN_HOME)
+
+call plug#end()

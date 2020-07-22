@@ -1,1 +1,5 @@
 .config/nvim/.netrwhist
+*.tdb
+.config/spotify/
+.config/spicetify/
+.config/Slack/
