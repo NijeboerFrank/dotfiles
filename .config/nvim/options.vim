@@ -17,11 +17,6 @@ nnoremap <silent <leader>nb :set relativenumber!<CR>
 inoremap jk <esc>
 inoremap <esc> <nop>
 
-" Map <S-j> and <S-k> to move tabs
-nnoremap <S-j> <nop> 
-nnoremap <S-j> gT
-nnoremap <S-k> gt
-
 " Yank to end of line
 nnoremap Y y$
 
@@ -44,3 +39,7 @@ cnoremap w!! w !sudo tee % >/dev/null
 " Share clipboard with the OS
 set clipboard=unnamedplus
 
+" Kivy Settings
+augroup kivy
+  au!
+  autocmd BufNewFile,BufRead *.kv setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab

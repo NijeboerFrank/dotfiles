@@ -34,4 +34,17 @@ endif
 "{{ Autocompletion related plugins
 call plug#begin(g:PLUGIN_HOME)
 
+" {{ Fuzzy searching plugins
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+
 call plug#end()
+
+
+
+" {{ Fuzzy searching settings
+
+" Remap ; to fzf fuzzy search
+map ; :Files<CR>
+
+
