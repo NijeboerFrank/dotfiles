@@ -37,7 +37,11 @@ call plug#begin(g:PLUGIN_HOME)
 " {{ Fuzzy searching plugins
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-commentary'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 call plug#end()
 
 

@@ -6,6 +6,10 @@
 nnoremap <space> <nop>
 let mapleader = "\<space>"
 
+" Share clipboard with the OS
+" On Arch you need to install xclip for 
+" this to work
+set clipboard=unnamedplus
 
 " Relative Numbers
 set number
@@ -36,8 +40,6 @@ nnoremap <silent> <leader><CR> :noh<CR>
 " Save a file with sudo 
 cnoremap w!! w !sudo tee % >/dev/null
 
-" Share clipboard with the OS
-set clipboard=unnamedplus
 
 " Kivy Settings
 augroup kivy

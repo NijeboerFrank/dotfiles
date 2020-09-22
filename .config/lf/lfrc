@@ -3,7 +3,7 @@
 # Basic Settings
 set preview true
 set hidden true
-set color256 true
+# set color256 true
 set drawbox true
 set icons true
 set ignorecase true
@@ -15,6 +15,7 @@ set ignorecase true
 cmd open ${{
     case $(file --mime-type $f -b) in
         text/*) $EDITOR $fx;;
+	inode/symlink) $EDITOR $fx;;
         *) for f in $fx; do setsid $OPENER $f > /dev/null 2> /dev/null & done;;
     esac
 }}
