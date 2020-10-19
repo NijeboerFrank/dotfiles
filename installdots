@@ -3,7 +3,7 @@ path=$(pwd)
 
 
 # Home directory
-ln -sf $PWD/wallpapers
+ln -sf $PWD/wallpapers $HOME/wallpapers
 ln -sf $PWD/.fehbg $HOME/.fehbg
 ln -sf $PWD/.gitconfig $HOME/.gitconfig
 ln -sf $PWD/.profile $HOME/.profile
