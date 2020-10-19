@@ -1,12 +1,60 @@
+#!/bin/sh
+path=$(pwd)
 
+
+# Home directory
+ln -sf $PWD/wallpapers
+ln -sf $PWD/.fehbg $HOME/.fehbg
+ln -sf $PWD/.gitconfig $HOME/.gitconfig
+ln -sf $PWD/.profile $HOME/.profile
+ln -sf $PWD/.zshrc $HOME/.zshrc
+
+# Config directory
+[ ! -d $HOME/.config ] && mkdir $HOME/.config
+
+[ ! -d $HOME/.config/VSCodium ] && mkdir -p $HOME/.config/VSCodium/User
+[ ! -d $HOME/.config/VSCodium/User ] && mkdir $HOME/.config/VSCodium/User
+ln -sf $path/config/VSCodium/keybindings.json $HOME/.config/VSCodium/User/keybindings.json
+ln -sf $path/config/VSCodium/settings.json $HOME/.config/VSCodium/User/settings.json
+
+[ -d $HOME/.config/alacritty ] && rm -rf $HOME/.config/alacritty
+ln -sf $path/config/alacritty $HOME/.config/alacritty
+
+
+[ -d $HOME/.config/bspwm ] && rm -rf $HOME/.config/bspwm
+ln -sf $path/config/bspwm $HOME/.config/bspwm
+
+[ -d $HOME/.config/lf ] && rm -rf $HOME/.config/lf
+ln -sf $path/config/lf $HOME/.config/lf
+
+[ -d $HOME/.config/neofetch ] && rm -rf $HOME/.config/neofetch
+ln -sf $path/config/neofetch $HOME/.config/neofetch
+
+[ -d $HOME/.config/nvim ] && rm -rf $HOME/.config/nvim
+ln -sf $path/config/nvim $HOME/.config/nvi
+
+[ -d $HOME/.config/polybar ] && rm -rf $HOME/.config/polybar
+ln -sf $path/config/polybar $HOME/.config/polybar
+
+[ -d $HOME/.config/sxhkd ] && rm -rf $HOME/.config/sxhkd
+ln -sf $path/config/sxhkd $HOME/.config/sxhkd
+
+[ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
+ln -sf $path/config/zathura/ $HOME/.config/zathura/
+
+ln -sf $path/config/mimeapps.list $HOME/.config/mimeapps.list
 
 # zathura
+#
 mkdir -p ~/.config/zathura
-ln -sf $PWD/.config/zathura/zathurarc $HOME/.config/zathura/zathurarc
+ln -sf $PWD/config/zathura/zathurarc $HOME/.config/zathura/zathurarc
 
 mkdir -p ~/.config/lf
-ln -sf $PWD/.config/lf/lfrc $HOME/.config/lf/lfrc
+ln -sf $PWD/config/lf/lfrc $HOME/.config/lf/lfrc
 
 rm -rf $HOME/.config/nvim
-ln -sf $PWD/.config/nvim $HOME/.config/nvim
+ln -sf $PWD/config/nvim $HOME/.config/nvim
+
+
+
 
