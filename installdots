@@ -4,8 +4,9 @@
 mkdir -p ~/.config/zathura
 ln -sf $PWD/.config/zathura/zathurarc $HOME/.config/zathura/zathurarc
 
-mkdir -p ~/.config/polybar
-ln -sf $PWD/.config/polybar/config $HOME/.config/polybar/config
-ln -sf $PWD/.config/polybar/scripts $HOME/.config/polybar/scripts
-ln -sf $PWD/.config/polybar/launch.sh $HOME/.config/polybar/launch.sh
+mkdir -p ~/.config/lf
+ln -sf $PWD/.config/lf/lfrc $HOME/.config/lf/lfrc
+
+rm -rf $HOME/.config/nvim
+ln -sf $PWD/.config/nvim $HOME/.config/nvim
 

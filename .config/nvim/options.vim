@@ -37,6 +37,12 @@ nnoremap N Nzz
 " Press <leader><enter> to remove highlights
 nnoremap <silent> <leader><CR> :noh<CR>
 
+" Mouse support
+set mouse=a
+
+" Unset wrapping
+set wrap!
+
 " Save a file with sudo 
 cnoremap w!! w !sudo tee % >/dev/null
 
