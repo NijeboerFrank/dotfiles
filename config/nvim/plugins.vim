@@ -35,7 +35,7 @@ endif
 call plug#begin(g:PLUGIN_HOME)
 
 " {{ Fuzzy searching plugins
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdtree'

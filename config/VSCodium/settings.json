@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.enableBold": true,
+  "terminal.integrated.fontFamily": "UbuntuMono Nerd Font Mono",
+  "terminal.integrated.fontSize": 15,
+  "workbench.colorTheme": "Nord",
+  "files.autoSave": "afterDelay"
+}
