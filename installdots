@@ -1,13 +1,16 @@
 #!/bin/sh
 path=$(pwd)
 
+yay -S nerd-fonts-ubuntu-mono
+
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
 # Home directory
 ln -sf $PWD/wallpapers $HOME/wallpapers
 ln -sf $PWD/.fehbg $HOME/.fehbg
 ln -sf $PWD/.gitconfig $HOME/.gitconfig
 ln -sf $PWD/.profile $HOME/.profile
-# ln -sf $PWD/.zshrc $HOME/.zshrc
+ln -sf $PWD/.zshrc $HOME/.zshrc
 ln -sf $PWD/.tmux.conf $HOME/.tmux.conf
 
 # Config directory
@@ -41,6 +44,9 @@ ln -sf $path/config/polybar $HOME/.config/polybar
 
 [ -d $HOME/.config/sxhkd ] && rm -rf $HOME/.config/sxhkd
 ln -sf $path/config/sxhkd $HOME/.config/sxhkd
+
+[ -d $HOME/.config/tridactyl ] && rm -rf $HOME/.config/tridactyl
+ln -sf $path/config/tridactyl $HOME/.config/tridactyl
 
 [ -d $HOME/.config/zathura ] && rm -rf $HOME/.config/zathura
 ln -sf $path/config/zathura $HOME/.config/zathura
