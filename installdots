@@ -1,7 +1,10 @@
 #!/bin/sh
 path=$(pwd)
 
-yay -S nerd-fonts-ubuntu-mono
+echo "keyserver keyserver.ubuntu.com" >> ~/.gnupg/gpg.conf
+
+sudo pacman -S neovim base-devel github-cli
+yay -S nerd-fonts-ubuntu-mono slack-desktop discord spotify vscodium-bin lf-bin
 
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
 
