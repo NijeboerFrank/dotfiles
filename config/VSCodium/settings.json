@@ -43,5 +43,6 @@
       "commands": ["editor.action.outdentLines"]
     }
   ],
-  "autoDocstring.startOnNewLine": true
+  "autoDocstring.startOnNewLine": true,
+  "workbench.startupEditor": "newUntitledFile"
 }
