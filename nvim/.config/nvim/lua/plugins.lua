@@ -63,7 +63,7 @@ return require("packer").startup(function(use)
     use "phaazon/hop.nvim"
 
     -- Zettelkasten
-    use "oberblastmeister/neuron.nvim"
+    -- use "oberblastmeister/neuron.nvim"
 
     -- Fuzzy finding with telescope
     use "nvim-lua/popup.nvim"

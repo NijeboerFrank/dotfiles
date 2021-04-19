@@ -16,7 +16,7 @@ else
     require("fn-telescope")
     require("fn-lspkind")
     require("fn-compe")
-    require("fn-neuron")
+    -- require("fn-neuron")
     require("fn-autopairs")
     require("fn-surround")
     require("fn-nvim-tree")

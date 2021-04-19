@@ -68,6 +68,10 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
   },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua"
+  },
   ["nvim-comment"] = {
     loaded = true,
     path = "/home/frank/.local/share/nvim/site/pack/packer/start/nvim-comment"
